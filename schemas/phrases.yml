@@ -1,0 +1,12 @@
+components:
+  schemas:
+    PhraseExport:
+      type: object
+      additionalProperties: false
+      properties:
+        key:
+          type: string
+          example: dashboard.title
+        value:
+          type: string
+          example: Welcome to your dashboard

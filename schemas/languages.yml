@@ -1,0 +1,33 @@
+components:
+  schemas:
+    Language:
+      type: object
+      additionalProperties: false
+      properties:
+        id:
+          type: string
+          example: 2GMnQk9TlT29TT6jPQkYD7jBxtH
+        name:
+          type: string
+          example: English
+        locale:
+          type: string
+          example: 'en_US'
+        workspace_id:
+          type: string
+          example: 2HsHXwJhNllxFTgyKePN8jFByJG
+        created_at:
+          type: string
+          example: '2022-01-01T20:00:00.89Z'
+          format: date
+        updated_at:
+          type: string
+          example: '2022-01-01T20:00:00.89Z'
+          format: date
+      required:
+        - id
+        - name
+        - locale
+        - workspace_id
+        - created_at
+        - updated_at

@@ -1,0 +1,34 @@
+components:
+  schemas:
+    Project:
+      type: object
+      additionalProperties: false
+      properties:
+        id:
+          type: string
+          example: 2GMnQk9TlT29TT6jPQkYD7jBxtH
+        name:
+          type: string
+          example: My project
+        description:
+          type: string
+          example: 'A project description'
+          nullable: true
+        workspace_id:
+          type: string
+          example: 2HsHXwJhNllxFTgyKePN8jFByJG
+        created_at:
+          type: string
+          example: '2022-01-01T20:00:00.89Z'
+          format: date
+        updated_at:
+          type: string
+          example: '2022-01-01T20:00:00.89Z'
+          format: date
+      required:
+        - id
+        - name
+        - description
+        - workspace_id
+        - created_at
+        - updated_at
