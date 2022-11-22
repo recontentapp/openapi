@@ -19,11 +19,11 @@ components:
         created_at:
           type: string
           example: '2022-01-01T20:00:00.89Z'
-          format: date
+          format: date-time
         updated_at:
           type: string
           example: '2022-01-01T20:00:00.89Z'
-          format: date
+          format: date-time
       required:
         - id
         - name
