@@ -106,6 +106,12 @@ paths:
           required: true
           schema:
             type : string
+        - name: revision_id
+          in: query
+          required: false
+          description: Returns phrases & translations for a specific revision. If not provided, it defaults to "master".
+          schema:
+            type : string
         - name: limit
           in: query
           required: false
